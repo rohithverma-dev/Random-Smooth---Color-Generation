@@ -22,7 +22,7 @@ function App() {
        interval_ID2 =  setInterval(() => { 
            hue=  hue<360 ? hue+1: 0
           document.body.style.backgroundColor =  `hsl(${hue}, ${50}%, ${70}%)`
-      }, 20);
+      }, 30);
     }
 
     return () => {
@@ -35,8 +35,8 @@ function App() {
   return (
     <>
       <div className="buttons">
-        <button onClick={()=>{setRandom(true);setSmooth(false)}} className={random?"active": "" } >Random Color Generation</button>
-        <button onClick={()=>{setSmooth(true);setRandom(false);}} className={smooth?"active": "" } >Smooth Color Generation</button>
+        <button onClick={()=>{setRandom(true);  setSmooth(false);}} className={random?"active": "" } >Random Color Generation</button>
+        <button onClick={()=>{setSmooth(true);  setRandom(false);}} className={smooth?"active": "" } >Smooth Color Generation</button>
       </div>
     </>
   );
